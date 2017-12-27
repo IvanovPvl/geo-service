@@ -31,6 +31,11 @@ class Block extends Model
         return $this->belongsTo(Location::class, 'geoname_id');
     }
 
+    /**
+     * @param string $ip
+     *
+     * @return mixed
+     */
     public static function get(string $ip)
     {
         return Cache::remember($ip, env('CACHE_TTL', 30), function () use ($ip) {
