@@ -1,0 +1,7 @@
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+/data/GeoLite2-City-Blocks-IPv4.csv
+/data/GeoLite2-City-Locations-en.csv
